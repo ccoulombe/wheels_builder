@@ -1,5 +1,4 @@
-module load cuda cudnn
-module load imkl
+module load nccl cuda cudnn imkl
 
 TARGET_WHEEL=$(realpath $1)
 WORKDIR=$(mktemp -d)
